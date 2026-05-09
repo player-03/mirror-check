@@ -1,0 +1,10 @@
+{
+  "name": "mirror-check",
+  "url" : "https://github.com/player-03/mirror-check",
+  "tags": [],
+  "description": "Compares two files to check if they match, with specific words swapped.",
+  "version": "0.0.0",
+  "releasenote": "",
+  "contributors": ["player_03"],
+  "dependencies": { }
+}
