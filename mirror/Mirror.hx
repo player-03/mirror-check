@@ -45,6 +45,7 @@ class Mirror {
 		
 		words = [
 			"x" => "y",
+			"h" => "v",
 			"horizontal" => "vertical",
 			"horizontally" => "vertically",
 			"width" => "height",
