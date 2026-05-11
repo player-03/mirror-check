@@ -48,6 +48,7 @@ class Mirror {
 			"horizontal" => "vertical",
 			"horizontally" => "vertically",
 			"width" => "height",
+			"widths" => "heights",
 			"row" => "column",
 			"rows" => "columns",
 			"left" => "top",
