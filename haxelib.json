@@ -4,6 +4,7 @@
   "tags": [],
   "description": "Compares two files to check if they accurately mirror one another.",
   "version": "0.0.0",
+  "license": "MIT",
   "releasenote": "",
   "contributors": ["player_03"],
   "dependencies": { }
