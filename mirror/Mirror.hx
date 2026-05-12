@@ -183,6 +183,8 @@ class Mirror {
 		}
 		
 		//Print the results.
+		var differences:Bool = false;
+		
 		if(unchangedLines1.length > 0) {
 			Sys.stderr().writeString("The following lines aren't mirrored:\n\n");
 			for(index1 in unchangedLines1) {
@@ -194,6 +196,8 @@ class Mirror {
 					Sys.stderr().writeString('$file2:(unknown)\n\n');
 				}
 			}
+			
+			differences = true;
 		}
 		
 		if(mapping1.contains(-1) || mapping2.contains(-1)) {
@@ -208,10 +212,16 @@ class Mirror {
 					Sys.stderr().writeString('$file2:${ index2 + 1 }: ${ lines2[index2] }\n');
 				}
 			}
+			
+			differences = true;
 		}
 		
 		if(outputFile != null) {
 			File.saveContent(outputFile, sortedLines1.join("\n"));
+		}
+		
+		if(!differences) {
+			Sys.println('$file1 and $file2 mirror one another.');
 		}
 		
 		return 0;
