@@ -25,4 +25,6 @@ $ haxelib run mirror-check path/to/File1.hx --output path/to/OutputFile1.hx
 $ haxelib run mirror-check path/to/File1.hx path/to/File2.hx --output MirroredFile1.hx
 ```
 
-Be aware that none of these options are suitable for use in an automated workflow. They take too many shortcuts and fail to account for too many situations. Always check the output yourself.
+Avoid using the first or third option in an automated workflow. They take too many shortcuts and fail to account for a lot of situations. Instead, review the output yourself and decide what to use.
+
+The second option (generating a mirror file) is simpler and therefore more robust. You could reasonably use it in low-importance scripts.
